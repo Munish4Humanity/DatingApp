@@ -10,7 +10,7 @@ import { AuthService } from "../_services/auth.service";
 export class NavComponent implements OnInit {
   model: any = {};
   constructor(
-    private authservice: AuthService,
+    public authservice: AuthService,
     private alertify: AlertifyService
   ) {}
 
@@ -26,8 +26,7 @@ export class NavComponent implements OnInit {
     );
   }
   loggedIn() {
-    const token = localStorage.getItem("token");
-    return !!token;
+    return this.authservice.loggedin();
   }
   logout() {
     localStorage.removeItem("token");
