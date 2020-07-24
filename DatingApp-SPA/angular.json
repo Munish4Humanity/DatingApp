@@ -82,6 +82,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/bootstwatch/dist/united/bootstrap.min.css",
               "./node_modules/alertifyjs/build/css/themes/bootstrap.min.css",
               "src/styles.css"
             ],
